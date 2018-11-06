@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+    <!--instead of pointing to file on 3rd party file copy file we just created under static.css bootstrap.min.css-->
 </head>
 <body>
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <!--own class navbar another class navbar-expand-sm, and bg-primary and navbar-dark another class-->
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Crab 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Crab 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+    </ul>
+</nav>
+
+<!--&lt;!&ndash; Black with white text &ndash;&gt;-->
+<!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark">...</nav>-->
+
+<!--&lt;!&ndash; Blue with white text &ndash;&gt;-->
+<!--<nav class="navbar navbar-expand-sm bg-primary navbar-dark">...</nav>-->
+
+<table class="table table-striped">
+    <!--get rid of period in .table-striped and place entire phrase in quotes after a space-->
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Ingedient</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Sauce</td>
+        <td>john@example.com</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Bread crumbs</td>
+        <td>mary@example.com</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Parsley</td>
+        <td>july@example.com</td>
+    </tr>
+    </tbody>
+</table>
 
 <h1>Crabcake Recipe</h1>
 <h2> Ingredients </h2>
@@ -37,5 +91,9 @@
 <p><b>Serves 6 people</b></p>
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZO63YYJT-lALy3izPhtgow_ZLgujfOPKQ4NscRex_NlnG6yc" alt="Crabby American Food">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
